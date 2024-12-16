@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Evaluating Variables</title>
+</head>
+
+<body>
+    <center>
+        <h1>Evaluating Variables</h1>
+        <p>Click the buttons to evaluate Java script codes. </p>
+        <button onclick="mf()">Try it</button>
+    </center>
+    <p id="result"></p>
+    <script>
+        function mf() {
+            var x = 11;
+            var y = 99
+            var a = eval("x+y") + "<br>";
+            var b = eval("x*y") + "<br>";
+            var c = eval("x-y") + "<br>";
+            var d = eval("x/y") + "<br>";
+
+            var res = a + b + c + d;
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
